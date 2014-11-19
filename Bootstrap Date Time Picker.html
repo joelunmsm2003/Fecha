@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://tarruda.github.io/bootstrap-datetimepicker/ -->
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Date/Time Picker for Twitter Bootstrap">
+    
+<link href="js/bootstrap.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" media="screen" href="js/bootstrap-datetimepicker.min.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script> 
+
+
+</head>
+
+<div class="well">
+  <div class="input-append date" id="datetimepicker1">
+    <input data-format="dd/MM/yyyy hh:mm:ss" type="text">
+    <span class="add-on">
+      <i data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar">
+      </i>
+    </span>
+  </div>
+</div>
+
+
+<div class="well">
+  <div id="datetimepicker2" class="input-append">
+    <input data-format="MM/dd/yyyy HH:mm:ss PP" type="text"></input>
+    <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+  </div>
+</div>
+<script type="text/javascript">
+  $(function() {
+    $('#datetimepicker2').datetimepicker({
+      language: 'en',
+      pick12HourFormat: true
+    });
+  });
+</script>
+
+
+
+<script type="text/javascript">
+  $(function() {
+    $('#datetimepicker1').datetimepicker({
+      language: 'pt-BR'
+    });
+  });
+</script>
+    
+
+
+  
